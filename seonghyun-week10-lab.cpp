@@ -11,15 +11,15 @@ float functionformark(float value1, float value2) {
     return gradePercentage;
 }
 
-void joke(char name) {
+void joke(char kidding) {
 
-    cin >> name;
     cout << "It is just joke" << endl;
 }
 
 int count(int y) {
     
-    return y;
+    conunt = y;
+    return count;
 }
 
 int main() {
@@ -65,23 +65,30 @@ int main() {
 
         // Ask the user for their name
         char name;
+
+        cin >> name;
         cout << "Please Enter your name: " << endl;
         
         // Call a function that tells them a joke
         // The function should not return a value
 
-        joke();
+        joke(name);
 
 
     } else {
         int count = 0;
 
         // Replace the while loop with a for loop
-        for ( count = 0; count < 10; count++) {
+        /* while(true == true) {
+            // Call a function here to increase the count
+            cout << count << " ";
+        } */
+        for ( count; count < 10; count++) {
 
             // Call a function here to increase the count
-            
-            cout << count() << " ";
+            onetoten(count);
+
+            cout << count << " ";
         }
     }
 
