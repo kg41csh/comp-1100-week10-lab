@@ -31,7 +31,7 @@ int main() {
     cout << "1: Calculate your grade on a test" << endl;
     cout << "2: Tell me a joke" << endl;
     cout << "3: Count to 10" << endl;
-    cout << "Any other key: Exit" << endl;
+    cout << "Any other key: Exit" << endl; //
 
     int selection;
     cin >> selection;
