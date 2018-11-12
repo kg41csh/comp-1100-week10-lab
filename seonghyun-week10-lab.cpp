@@ -5,22 +5,24 @@
 
 using namespace std;
 
-float functionformark(float value1, float value2) {
+double calculatemark(float newMark, float newTotalmark) {
 
-    double gradePercentage = (value1 + value2 / 2) * 100;
+    double remark =  newMark /  newTotalmark ;
+    double gradePercentage = remark * 100;
     return gradePercentage;
 }
 
-void joke(char kidding) {
+void joke(string kidding) {
 
-    cout << "It is just joke" << endl;
+    cout << kidding << ", " << "it was just joke" << endl;
 }
 
-int count(int y) {
-    
-    conunt = y;
-    return count;
+
+int onetoten(int newcount) {
+    newcount = newcount + 1;
+    return newcount;
 }
+
 
 int main() {
     cout << "Welcome to the function machine!" << endl;
@@ -45,9 +47,10 @@ int main() {
         float marksReceived = 0;
         float totalMarksAvailable = 0;
         double gradePercentage = 0;
+        double remark;
 
         // Read in 2 integer values
-        cout << "Enter your grade: " << endl;
+        cout << "Enter your two grades: " << endl;
         cin >> marksReceived >> totalMarksAvailable;
 
         /* 
@@ -57,38 +60,43 @@ int main() {
            as a double
         */
 
-        functionformark(marksReceived, totalMarksAvailable);
+        gradePercentage = calculatemark(marksReceived, totalMarksAvailable);
 
         cout << "You achieved a grade of: " << gradePercentage << "%" << endl;
 
     } else if(selection == 2) {
 
         // Ask the user for their name
-        char name;
+        string name;
 
-        cin >> name;
         cout << "Please Enter your name: " << endl;
-        
+        cin >> name;
+       
         // Call a function that tells them a joke
         // The function should not return a value
 
         joke(name);
 
 
-    } else {
+    } else if(selection == 3) {
         int count = 0;
-
+        int n;
+        
         // Replace the while loop with a for loop
         /* while(true == true) {
             // Call a function here to increase the count
             cout << count << " ";
         } */
-        for ( count; count < 10; count++) {
 
+        for ( int n = 0; n < 10; n++ ) {
+
+            int newcount;
             // Call a function here to increase the count
-            onetoten(count);
+
+            count = onetoten(count);
 
             cout << count << " ";
+            
         }
     }
 
